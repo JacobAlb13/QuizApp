@@ -1,7 +1,7 @@
 /*******************GENERAL*************/
 *{
     box-sizing: border-box;
-    font-family: 'Nova Square';
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 body{
     background-color: slategrey;
