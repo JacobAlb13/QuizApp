@@ -146,7 +146,6 @@ if(option.textContent != questions[materia][contaRisp]['corretta']){
 contaRisp++;
 if(contaDom === 4){
     document.getElementById("result").style.display = "inline-block";
-    document.getElementById("title").style.backgroundColor = "red";
 }
 
 });
