@@ -166,5 +166,5 @@ function showScore(){
 
 function scoreUser(element){
 let point = document.getElementById("score");
-point.textContent = element;
+point.textContent = element + "/4";
 }
