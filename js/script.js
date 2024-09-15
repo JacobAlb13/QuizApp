@@ -139,7 +139,7 @@ if(option.textContent != questions[materia][contaRisp]['corretta']){
     option.style.backgroundColor = "green";
     correct = true;
     rispEsatte++;
-    localStorage.setItem('rispEsatte', rispEsatte);
+    scoreUser(rispEsatte);
     
     
 }
@@ -158,8 +158,13 @@ function endQuiz(){
 }
 }
 
+function showScore(){
+    document.getElementById("result-score").style.display = "block";
+    document.getElementById("subjects").style.display = "none";
+    document.getElementById("questions").style.display = "none";
+}
 
-window.onload = function() {
-    let rispEsatte = localStorage.getItem('rispEsatte'); 
-    document.getElementById("score").textContent = rispEsatte + "/4";
-};
+function scoreUser(element){
+let point = document.getElementById("score");
+point.textContent = element;
+}
