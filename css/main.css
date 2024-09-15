@@ -119,6 +119,9 @@ header{
     text-transform: 100ms;
 }
 
+#result-score{
+    display: none;
+}
 
 /*******************NEXT QUESTIONS, START QUIZ, RESULT QUIZ**************/
 
