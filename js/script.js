@@ -79,6 +79,7 @@ function loadQuizStory(){
         list.getElementsByClassName("btn")[x].innerHTML = questions[materia][contaDom]['risposta'][x];
     }
     document.getElementById("subjects").style.display = "none";
+    document.getElementById("questions").style.display = "block";
     document.getElementById("next").style.display = "inline-block";
     CorrectAnswer();
     contaDom++;
@@ -91,7 +92,9 @@ function loadQuizMaths(){
         for(let x=0;x<4;x++){
             list.getElementsByClassName("btn")[x].innerHTML = questions[materia][contaDom]['risposta'][x];
         }
+    
         document.getElementById("subjects").style.display = "none";
+    document.getElementById("questions").style.display = "block";
         document.getElementById("next").style.display = "inline-block";
         CorrectAnswer();
         contaDom++;
@@ -105,6 +108,7 @@ function loadQuizScience(){
                 list.getElementsByClassName("btn")[x].innerHTML = questions[materia][contaDom]['risposta'][x];
             }
             document.getElementById("subjects").style.display = "none";
+    document.getElementById("questions").style.display = "block";
             document.getElementById("next").style.display = "inline-block";
             CorrectAnswer();
             contaDom++;
